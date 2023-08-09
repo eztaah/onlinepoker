@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>online poker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="container">
+
+
+
+            <!------------------------- homepage ------------------------->
+            <div id="homepageDiv">
+
+                <div id="title">online poker</div>
+                
+                <div id="loginDiv">
+                    <input id="textarea" type="text" placeholder="enter a username" >
+                    <input class="hello" id="playButton" type="submit" value="play">
+                </div>
+
+                <div id="usernameNotValid">your username is not valid</div>
+
+            </div>
+
+
+
+
+
+
+
+
+            <!------------------------- game ------------------------->
+            <div id="gameDiv">
+
+                <!------------ table drawing ------------>
+                <div id="tableDrawing"></div>
+
+
+
+
+
+                <!------------ players div ------------>
+
+                <!----- player 0 ----->
+                <div class="playersDiv" id="playerArea0">
+                    <div class="profilePictureClass" id="profilePictureArea0"></div>
+                    <div class="nameClass" id="nameArea0"></div>
+                    <div class="tokensInventoryClass" id="tokensInventoryArea0"></div>
+                    <div class="currentStatusClass" id="currentStatusArea0"></div>
+                    <div class="playersCardsClass" id="card0Area0"></div>
+                    <div class="playersCardsClass" id="card1Area0"></div>
+                </div>
+                <div class="betClass" id="betArea0"></div>
+                <div class="tokenPictureClass" id="tokenPictureArea0"></div>
+                <div id="infoHand"></div>
+
+                <!----- player 1 ----->
+                <div class="playersDiv" id="playerArea1">
+                    <div class="profilePictureClass" id="profilePictureArea1"></div>
+                    <div class="nameClass" id="nameArea1"></div>
+                    <div class="tokensInventoryClass" id="tokensInventoryArea1"></div>
+                    <div class="currentStatusClass" id="currentStatusArea1"></div>
+                    <div class="playersCardsClass" id="card0Area1"></div>
+                    <div class="playersCardsClass" id="card1Area1"></div>
+                </div>
+                <div class="betClass" id="betArea1"></div>
+                <div class="tokenPictureClass" id="tokenPictureArea1"></div>
+                
+                <!----- player 2 ----->
+                <div class="playersDiv" id="playerArea2">
+                    <div class="profilePictureClass" id="profilePictureArea2"></div>
+                    <div class="nameClass" id="nameArea2"></div>
+                    <div class="tokensInventoryClass" id="tokensInventoryArea2"></div>
+                    <div class="currentStatusClass" id="currentStatusArea2"></div>
+                    <div class="playersCardsClass" id="card0Area2"></div>
+                    <div class="playersCardsClass" id="card1Area2"></div>
+                </div>
+                <div class="betClass" id="betArea2"></div>
+                <div class="tokenPictureClass" id="tokenPictureArea2"></div>
+                
+                <!----- player 3 ----->
+                <div class="playersDiv" id="playerArea3">
+                    <div class="profilePictureClass" id="profilePictureArea3"></div>
+                    <div class="nameClass" id="nameArea3"></div>
+                    <div class="tokensInventoryClass" id="tokensInventoryArea3"></div>
+                    <div class="currentStatusClass" id="currentStatusArea3"></div>
+                    <div class="playersCardsClass" id="card0Area3"></div>
+                    <div class="playersCardsClass" id="card1Area3"></div>
+                </div>
+                <div class="betClass" id="betArea3"></div>
+                <div class="tokenPictureClass" id="tokenPictureArea3"></div>
+      
+                <!----- player 4 ----->
+                <div class="playersDiv" id="playerArea4">
+                    <div class="profilePictureClass" id="profilePictureArea4"></div>
+                    <div class="nameClass" id="nameArea4"></div>
+                    <div class="tokensInventoryClass" id="tokensInventoryArea4"></div>
+                    <div class="currentStatusClass" id="currentStatusArea4"></div>
+                    <div class="playersCardsClass" id="card0Area4"></div>
+                    <div class="playersCardsClass" id="card1Area4"></div>
+                </div>
+                <div class="betClass" id="betArea4"></div>
+                <div class="tokenPictureClass" id="tokenPictureArea4"></div>
+
+
+
+
+
+
+                <!------------ other ------------>
+
+                <!----- middle cards ----->
+                <div class ="middleCardsClass" id="middleCard0"></div>
+                <div class ="middleCardsClass" id="middleCard1"></div>
+                <div class ="middleCardsClass" id="middleCard2"></div>
+                <div class ="middleCardsClass" id="middleCard3"></div>
+                <div class ="middleCardsClass" id="middleCard4"></div>
+
+                <!----- pot ----->
+                <div id="pot"></div>
+                <div id="tokensPilePicture"></div>
+
+                <!----- dealer token ----->
+                <div id="dealerToken">D</div>
+
+                <!----- messages ----->
+                <div class="messages" id="hintMessage">click on the sreen when you are ready</div>
+                <div class="messages" id="spectatorMessage">spectator mode</div>
+
+
+                <!----- spectator arrow ----->
+                <div id="rightSpectatorArrow"></div>
+                <div id="leftSpectatorArrow"></div>
+
+                <!----- info hand winner ----->
+                <div id="infoHandWinner"></div>
+
+                
+
+
+
+                <!------------ buttons ------------>
+                <div id="buttonsDiv">
+                    <div class ="buttonsClass" id="foldButton">fold</div>
+                    <div class ="buttonsClass" id="callcheckButton">call</div>
+                    <div class ="buttonsClass" id="raisebetButton">raise</div>
+                </div>
+
+                <div id="raiseDiv">
+                    <input id="bar" type="range" step="500">
+                    <button id="allInButton">all-in</button>
+                    <button id="potButton">pot</button>
+                    <button id="halfPotButton">1/2 pot</button>
+                    <div id="amountDiv"></div>
+                </div>
+
+
+            </div>
+        </div> 
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="code.js" charset="utf-8"></script>
+    </body>
+</html>

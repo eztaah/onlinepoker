@@ -1,0 +1,685 @@
+/*** fonts ***/
+@font-face {
+    font-family: "font";
+    src: url(./assets/font.ttf);
+}
+
+/*** container ***/
+#container {
+    position: relative;
+    margin: 30px auto;
+    height: 562px;
+    width: 892px;
+}
+
+
+
+
+/********************************* homepage *********************************/
+#homepageDiv {
+    position: absolute;
+    height: 560px;
+    width: 890px;
+    background-color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+#title {
+    position: relative;
+    font-family: font;
+    font-size: 4rem;
+    margin-top: 50px;
+    cursor: default;
+}
+
+#loginDiv {
+    font-size: 1.5rem;
+    position: relative;
+    height: 41px;
+    width: 550px;
+    margin: 150px auto 0;
+}
+
+#textarea {
+    width: 400px;
+    height: 32px;
+    font-size: 0.8rem;
+    font-family: font;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+#playButton {
+    border: 1px solid black;
+    font-size: 1.3rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    font-family: font;
+    font-size: 0.7rem;
+    margin-left: 0px;
+}
+#usernameNotValid {
+    position: relative;
+    font-family: font;
+    z-index: 0;
+    text-align: center;
+    width: 380px;
+    font-size: 0.8rem;
+    margin-left: 210px;
+    margin-top: 8px;
+    color: white;
+}
+
+
+
+
+
+
+
+/********************************* game *********************************/
+#gameDiv {
+    position: absolute;
+    height: 560px;
+    width: 890px;
+    background-color: white;
+    z-index: 1;
+}
+
+
+/*********************** table drawing ***********************/
+#tableDrawing {
+    position: absolute;
+    height: 333px;
+    width: 736px;
+    border: 10px solid black;
+    border-radius: 200px;
+    z-index: 1;
+    top: 60px;
+    left: 67px;
+    background: white;
+} 
+
+
+
+
+/*********************** players ***********************/
+
+/************* players area *************/
+.playersDiv {
+    position: absolute;
+    height: 111px;
+    width: 96px;
+}
+#playerArea0 {
+    height: 144px;
+    width: 124px;
+    top: 150px;
+    left: 383px;
+}
+#playerArea1 {
+    top: 150px;
+    left: 397px;
+}
+#playerArea2 {
+    top: 150px;
+    left: 397px;
+}
+#playerArea3 {
+    top: 150px;
+    left: 397px;
+}
+#playerArea4 {
+    top: 150px;
+    left: 397px;
+}
+
+
+/************* profile picture area *************/
+.profilePictureClass {
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 100px;
+    height: 75px;
+    width: 75px;
+    z-index: 0;
+    left: 8px;
+    background-size: 100px;
+}
+#profilePictureArea0 {
+    height: 105px;
+    width: 105px;
+    left: 6px;
+    background: white;
+    background-size: 100px;
+}
+
+
+/************* name area *************/
+.nameClass {
+    position: absolute;
+    background-color: white;
+    height: 20px;
+    width: 90px;
+    border: 3px solid black;
+    text-align: center;
+    top: 63px;
+    z-index: 0;
+    font-size: 0.6rem;
+    line-height: 20px;
+    font-family: font;
+}
+#nameArea0 {
+    height: 26px;
+    width: 117px;
+    top: 87px;
+    font-size: 0.8rem;
+    line-height: 27px;
+}
+
+
+/************* tokens inventory area *************/
+.tokensInventoryClass  {
+    position: absolute;
+    background-color: white;
+    height: 15px;
+    width: 92px;
+    border: 2px solid black;
+    text-align: center;
+    top: 87px;
+    font-size: 0.7rem;
+    border-radius: 30px;
+    font-family: font;
+    line-height: 17px;
+    z-index: 0;
+}
+#tokensInventoryArea0 {
+    height: 20px;
+    width: 119px;
+    top: 117px;
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+/************* current status area *************/
+.currentStatusClass {
+    position: absolute;
+    height: 12px;
+    width: 48px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    top: 38px;
+    text-align: center;
+    font-family: font;
+    font-size: 0.4rem;
+    line-height: 12px;
+    color: white;
+    z-index: 0;
+    background-color: white;
+}
+#currentStatusArea0 {
+    border-radius: 20px;
+    width: 70px;
+    height: 17px;
+    font-size: 0.6rem;
+    line-height: 17px;
+    left: 17px;
+    top: 56px;
+}
+#currentStatusArea1 {
+    left: 13px;
+}
+#currentStatusArea2 {
+    left: 13px;
+}
+#currentStatusArea3 {
+    left: 13px;
+}
+#currentStatusArea4 {
+    left: 13px;
+}
+
+
+/************* bet area *************/
+.tokenPictureClass {
+    position: absolute;
+    background: url('./assets/tokens_pictures/token.png') no-repeat;
+    background-size: 100%;
+    line-height: 0px;
+    border-radius: 0px;
+    padding-left: 0px;
+    height: 20px;
+    width: 20px;
+    z-index: 0;
+}
+#tokenPictureArea0 {
+    height: 35px;
+    width: 35px;
+    left: 304px;
+    top: 294px;
+}
+#tokenPictureArea1 {
+    left: 168px;
+    top: 290px;
+}
+#tokenPictureArea2 {
+    left: 193px;
+    top: 172px;
+}
+#tokenPictureArea3 {
+    left: 625px;
+    top: 172px;
+}
+#tokenPictureArea4 {
+    left: 663px;
+    top: 290px;
+}
+.betClass {
+    border: 0.5px solid black;
+    height: 15px;
+    position: absolute;
+    text-align: right;
+    font-size: 0.7rem;
+    z-index: 11;
+    font-family: font;
+    line-height: 17px;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 5px;
+    background-color: white;
+    z-index: 0;
+}
+#betArea0 {
+    width: 104px;
+    height: 27px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    padding-left: 28px;
+    padding-right: 7px;
+    top: 290px;
+    left: 300px;
+}
+#betArea1 {
+    left: 165px;
+    top: 288px;
+}
+#betArea2 {
+    left: 190px;
+    top: 170px;
+}
+#betArea3 {
+    left: 622px;
+    top: 170px;
+}
+#betArea4 {
+    left: 660px;
+    top: 288px;
+}
+
+
+/************* info hand *************/
+#infoHand {
+    background-color: black;
+    color: white;
+    font-family: font;
+    position: absolute;
+    text-align: center;
+    font-size: 0.44rem;
+    height: 20px;
+    width: 115px;
+    top: 390px;
+    left: 433px;
+    z-index: 0;
+    border-radius: 5px;
+    line-height: 22px;
+}
+
+
+
+
+
+/*********************** cards ***********************/
+
+/************* players cards *************/
+.playersCardsClass {
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    height: 34px;
+    width: 23px;
+    z-index: 0;
+}
+#card0Area0 {
+    border: 2px solid black;
+    height: 74px;
+    width: 51px;
+    top: -17px;
+    left: 122px;
+}
+#card1Area0 {
+    border: 2px solid black;
+    height: 74px;
+    width: 51px;
+    top: -17px;
+    left: 182px;
+}
+#card0Area1 {
+    top: -20px;
+    left: 83px;
+}
+#card1Area1 {
+    top: -20px;
+    left: 110px;
+}
+#card0Area2 {
+    top: 112px;
+    left: 80px;
+}
+#card1Area2 {
+    top: 112px;
+    left: 107px;
+}
+#card0Area3 {
+    top: 112px;
+    left: -33px;
+}
+#card1Area3 {
+    top: 112px;
+    left: -6px;
+}
+#card0Area4 {
+    top: -20px;
+    left: -36px;
+}
+#card1Area4 {
+    top: -20px;
+    left: -9px;
+}
+
+
+/************* middle cards *************/
+.middleCardsClass{
+    border: 2px black solid;
+    width: 43px;
+    height: 61px;
+    position: absolute;
+    border-radius: 5px;
+    top: 165px;
+    background-color: black;
+    z-index: 0;
+}
+#middleCard0 {
+    left: 321px;
+}
+#middleCard1 {
+    left: 373px;
+    transform: rotate(1deg);
+}
+#middleCard2 {
+    left: 426px;
+}
+#middleCard3 {
+    left: 478px;
+    transform: rotate(-3deg);
+}
+#middleCard4 {
+    left: 530px;
+}
+
+
+
+
+
+/*********************** other ***********************/
+
+/************* pot *************/
+#tokensPilePicture {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background: url('./assets/tokens_pictures/tokens_pile.png');
+    background-size: 100%;
+    left: 343px;
+    top: 101px;
+    z-index: 0;
+}
+#pot {
+    position: absolute;
+    border: 4px solid black;
+    border-radius: 20px;
+    height: 40px;
+    top: 100px;
+    left: 340px;
+    font-size: 2rem;
+    line-height: 43px;
+    font-weight: bold;
+    padding-left: 5px;
+    z-index: 0;
+    font-family: font;
+    text-align: right;
+    padding-left: 42px;
+    padding-right: 7px;
+}
+
+
+/************* dealer token *************/
+#dealerToken {
+    position: absolute;
+    height: 21px;
+    width: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 0.6rem;
+    line-height: 22px;
+    z-index: 0;
+    font-family: font;
+    padding-left: 2px;
+    top: 210px;
+    left: 435px;
+}
+
+
+/************* messages *************/
+.messages {
+    position: absolute;
+    font-family: font;
+    text-align: center;
+    cursor: default;
+}
+
+#hintMessage {
+    width: 630px;
+    font-size: 0.8rem;
+    left: 130px;
+    top: 215px;
+    z-index: 0;
+}
+#spectatorMessage {
+    width: 630px;
+    font-size: 0.8rem;
+    left: 130px;
+    top: 550px;
+    color: white;
+}
+
+
+/************* spectator arrow *************/
+#rightSpectatorArrow {
+    width: 30px;
+    height: 56px;
+    top: 426px;
+    left: 455px;
+    position: absolute;
+    background-color: white;
+    background-size: auto 56px;
+}
+#leftSpectatorArrow {
+    width: 30px;
+    height: 56px;
+    top: 426px;
+    left: 257px;
+    position: absolute;
+    background-color: white;
+    background-size: auto 56px;
+    transform: rotate(180deg);
+}
+
+
+/************* info hand winner *************/
+#infoHandWinner {
+    color: black;
+    font-family: font;
+    position: absolute;
+    text-align: center;
+    font-size: 1rem;
+    height: 20px;
+    width: 300px;
+    top: 240px;
+    left: 295px;
+    z-index: 0;
+}
+
+
+
+
+
+
+/************* buttons *************/
+#buttonsDiv {
+    position: absolute;
+    height: 30px;
+    width: 320px;
+    top: 470px;
+    left: 555px;
+}
+.buttonsClass {
+    position: absolute;
+    background-color: white;
+    color: white;
+    font-family: font;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    cursor: default;
+    font-size: 0.8rem;
+    line-height: 30px;
+}
+#callcheckButton {
+    left: 110px;
+}
+#raisebetButton {
+    left: 220px;
+}
+
+
+#raiseDiv {
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    height: 155px;
+    width: 100px;
+    left: 380px;
+    top: 150px;
+    justify-content: center;
+    z-index: 0;
+}
+#bar {
+    position: absolute;
+    -webkit-appearance: none;
+    width: 120px;
+    height: 7px;
+    top: 55px;
+    left: 32px;
+    background: white;
+    background-size: 70% 100%;
+    border-radius: 5px;
+    background-image: linear-gradient(white, white);
+    border: 2px solid black;
+    background-size: 70% 100%;
+    transform: rotate(-90deg);
+}
+#bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 #555;
+}
+
+
+#allInButton {
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-family: font;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    width: 65px;
+    height: 20px;
+    font-size: 0.5rem;
+    line-height: 0px;
+
+    left: 8px;
+    top: 5px;
+}
+#potButton {
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-family: font;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    width: 65px;
+    height: 20px;
+    font-size: 0.5rem;
+    line-height: 0px;
+    left: 8px;
+    top: 52px;
+}
+#halfPotButton {
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-family: font;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    width: 65px;
+    height: 20px;
+    font-size: 0.4rem;
+    line-height: 0px;
+
+    left: 8px;
+    top: 100px;
+}
+#amountDiv {
+    position: absolute;
+    border: 1px solid black;
+    height: 20px;
+    width: 80px;
+    text-align: center;
+    top: 135px;
+    font-family: font;
+    font-size: 0.7rem;
+    line-height: 22px;
+    color: black;
+    border-radius: 5px;
+}
