@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "font";
+    src: url(./font.ttf);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0D1117;
+}
+
+.custom-button {
+    font-family: font;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: #0D1117;
+    padding: 15px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
